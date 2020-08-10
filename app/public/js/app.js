@@ -5,8 +5,7 @@ var articles = []
 var comments = []
 
 /*Event Handlers*/
-
-$(document).on('click', '#scrapeBtn', function(){
+$(document).on('click', '#getBtn', function(){
     getResults()
 })
 
@@ -58,7 +57,7 @@ function getResults(){
         $('#articleResults').empty()
         articles = []
         getOneArticle(cardID)
-        $('#commentModal').attr('data-id', cardID)
+        $('#noteModal').attr('data-id', cardID)
     }
 
     articleResults()

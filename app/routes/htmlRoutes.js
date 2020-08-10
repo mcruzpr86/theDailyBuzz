@@ -9,7 +9,7 @@ module.exports = function(app){
         res.sendFile(path.join(__dirname, '../public/js/app.js'))
     });
     app.get('/images/:image', function(req,res){
-        let image = req.params.image
+        var image = req.params.image
         res.sendFile(path.join(__dirname, "../public/images/" + image))
     })
 }
